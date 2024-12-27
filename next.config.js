@@ -23,7 +23,7 @@ const nextConfig = {
     return config;
   },
   // Ensure proper static file serving
-  assetPrefix: '.',
+  assetPrefix: '/',
   trailingSlash: true,
 }
 
