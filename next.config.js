@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'out',
+  output: 'standalone',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -15,16 +14,15 @@ const nextConfig = {
       }
     ],
   },
-  // Disable chunk splitting entirely
-  webpack: (config) => {
-    config.optimization.splitChunks = false;
-    config.optimization.runtimeChunk = false;
-
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+      };
+    }
     return config;
   },
-  // Ensure proper static file serving
-  assetPrefix: '/',
-  trailingSlash: true,
 }
 
 module.exports = nextConfig
