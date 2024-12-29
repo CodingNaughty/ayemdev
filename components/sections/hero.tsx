@@ -59,7 +59,7 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <a
-            href="https://github.com/maaindev"
+            href="https://github.com/CodingNaughty"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-primary"
@@ -68,7 +68,7 @@ export function HeroSection() {
             <span className="sr-only">GitHub</span>
           </a>
           <a
-            href="https://discordapp.com/users/maaindev"
+            href="https://discordapp.com/users/ay_em.io"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-primary"
@@ -77,7 +77,7 @@ export function HeroSection() {
             <span className="sr-only">Discord</span>
           </a>
           <a
-            href="https://instagram.com/maaindev"
+            href="https://instagram.com/ay_em.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-primary"
@@ -86,7 +86,7 @@ export function HeroSection() {
             <span className="sr-only">Instagram</span>
           </a>
           <a
-            href="https://tiktok.com/@maaindev"
+            href="https://tiktok.com/ay_em.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-primary"
