@@ -31,7 +31,7 @@ export function AboutSection() {
             <Card className="overflow-hidden rounded-xl">
               <CardContent className="p-0">
                 <Image
-                  src="/public/profile-image-arabic.png"
+                  src="public/profile-image-arabic.png"
                   alt="Mā'in"
                   width={600}
                   height={800}
